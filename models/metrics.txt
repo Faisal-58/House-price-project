@@ -1,0 +1,14 @@
+XGBoost:
+  R² Score: 0.8765
+  MSE: 0.03373
+  MAE: 0.13860
+
+Random Forest:
+  R² Score: 0.8722
+  MSE: 0.03491
+  MAE: 0.13805
+
+Linear Regression:
+  R² Score: 0.7822
+  MSE: 0.05950
+  MAE: 0.18342
