@@ -106,15 +106,6 @@ Strongest positive correlations with Price: Rooms, Bedroom2, Bathroom.
 Weak negative correlation with Distance and Latitude.
 
 
-
-
-
-
-
-
-
-
-
 ## Model Performance (with log-transformed prices) 
 **Evaluation Metrics**
 
@@ -126,10 +117,28 @@ Weak negative correlation with Distance and Latitude.
 
 The results confirmed the fact that XGBoost outperformes the other models. Also Random Forest did a good job with a R2 score of 0.8722. This confirms the fact the tree models mostle perform better compared to linear models for countering non-linear data.
 
+**FASTAPI**
+FASTAPI is used for wrapping the ML model in an API, which can the frontend, the latter sending data and get back predictions as JSON.
+
+![Swagger UI](images/fast.png)
+
+The api is also tested using POSTMAN.
+
+**Streamlit**
+
+A frontend UI is created for which can connect with the ml model wrapped in an api and sends data to get back response in JSON.
+
+![Streamlit UI](images/streamlit1.png)
+
+![Streamlit UI](images/streamlit2.png)
+
+![Streamlit UI](images/streamlit3.png)
 
 
 
-## 🛠️ Tech Stack
+
+
+**Tech Stack**
 
 - Python 3.11
 - [pandas](w), [scikit-learn](w), [xgboost](w)
