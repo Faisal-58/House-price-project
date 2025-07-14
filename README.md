@@ -2,6 +2,12 @@
 
 An end-to-end Machine Learning project to predict housing prices in Melbourne, Australia. Built using XGBoost, FastAPI (for serving predictions), and Streamlit (for interactive frontend).
 
+**Dataset**
+The used dataset in the project is taken from https://www.kaggle.com/datasets/dansbecker/melbourne-housing-snapshot/data. The dataset has 13580 rows and 21 columns. Both types of features (Categorical and Numerical are present in the dataset).
+Numerical features = 'Rooms', 'Distance','Postcode','Bedroom2','Bathroom', 'Car', 'Landsize', 'BuildingArea', 'Lattitude','Longtitude','Propertycount','Address'
+Categorical features = 'Suburb','Type', 'Method', 'SellerG', 'CouncilArea', 'Regionname', 'Date', 'YearBuilt'
+! Lots of missing values are present in the dataset and preprocessing was carried out using imputation techniques in the pipeline.
+
  **Important Aspects**
  1. Cleaning and Preprocessing of a real-world Melbourne Housing Dataset.
  2. Performing Exploratory Data Analysis (EDA) for better understanding of the data and viewing the insights.
@@ -13,6 +19,11 @@ An end-to-end Machine Learning project to predict housing prices in Melbourne, A
  8. The coding is done in VS code having a modular structure creating virtual environment and also requirements.txt
  9. The project is uploaded by using git.
 
+**Exploratory Data Analysis**
+EDA is performed for the dataset inorder to get important insights of the used dataset. Some of the plots are listed here to have a better idea of the dataset and the relationships among the present features.
+
+
+
 
 
 ## Model Performance (with log-transformed prices) 
@@ -22,9 +33,12 @@ An end-to-end Machine Learning project to predict housing prices in Melbourne, A
 |------------------|----------|---------|---------|
 | Linear Regression| 0.7822   | 0.1834  | 0.0595  |
 | Random Forest    | 0.8722   | 0.1380  | 0.0349  |
-| XGBoost          | **0.8765**   | **0.1386**  | **0.0337**  |
+| XGBoost          | 0.8765   | 0.1386  | 0.0337  |
 
 The results confirmed the fact that XGBoost outperformes the other models. Also Random Forest did a good job with a R2 score of 0.8722. This confirms the fact the tree models mostle perform better compared to linear models for countering non-linear data.
+
+
+
 
 ## 🛠️ Tech Stack
 
